@@ -50,8 +50,8 @@ mvn clean install
 # Deploy WAR or run with a servlet container (e.g., Tomcat)
 Frontend Setup
 bash
-Copy
-Edit
+
+
 npm install
 npm run dev
 🧪 Sample Pages
@@ -68,12 +68,7 @@ MergeSort.java — For sorting transactions
 
 BinarySearchTree.java — For account searching
 
-✏️ Authors
-Developed by [Your Name or Team]
 
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-yaml
-Copy
-Edit
