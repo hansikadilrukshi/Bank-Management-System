@@ -1,4 +1,4 @@
-# Project Bolt
+# Project Bank Management System
 
 A full-stack web application combining Java (Spring-like structure), JSP, and a modern TypeScript + React frontend using Vite and Tailwind CSS. The project appears to be a banking management system with features for admin and customer users, including transaction management and account handling.
 
