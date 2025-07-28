@@ -14,3 +14,66 @@ A full-stack web application combining Java (Spring-like structure), JSP, and a 
 
 ## 📁 Project Structure
 
+project/
+├── src/
+│ ├── main/java/com/bank/
+│ │ ├── controller/ # Login, Logout, Admin, Transaction controllers
+│ │ ├── model/ # Account and Transaction model classes
+│ │ ├── service/ # Business logic for accounts and transactions
+│ │ ├── structure/ # MergeSort & BinarySearchTree algorithms
+│ │ └── utils/ # File handling utility
+│ ├── main/webapp/ # JSPs, CSS, and web.xml
+│ └── main.tsx, App.tsx # React frontend entry points
+├── index.html # HTML entry point for Vite
+├── package.json # NPM dependencies
+├── pom.xml # Maven dependencies for backend
+├── tailwind.config.js # Tailwind CSS config
+├── vite.config.ts # Vite build config
+
+shell
+Copy
+Edit
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Java 17+
+- Maven
+- Node.js & npm
+
+### Backend Setup
+
+```bash
+cd project
+mvn clean install
+# Deploy WAR or run with a servlet container (e.g., Tomcat)
+Frontend Setup
+bash
+Copy
+Edit
+npm install
+npm run dev
+🧪 Sample Pages
+login.jsp — User login page
+
+adminDashboard.jsp, customerDashboard.jsp — Role-based dashboards
+
+transactionHistory.jsp, adminAccounts.jsp — Data views
+
+error.jsp — Error handling page
+
+📦 Algorithms
+MergeSort.java — For sorting transactions
+
+BinarySearchTree.java — For account searching
+
+✏️ Authors
+Developed by [Your Name or Team]
+
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+yaml
+Copy
+Edit
