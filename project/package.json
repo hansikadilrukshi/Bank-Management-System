@@ -1,0 +1,12 @@
+{
+  "name": "bank-management-system",
+  "version": "1.0.0",
+  "description": "Bank Management System WAR Application",
+  "scripts": {
+    "compile": "node -e \"const fs=require('fs');const path=require('path');function findJavaFiles(dir){let files=[];try{const items=fs.readdirSync(dir);for(const item of items){const fullPath=path.join(dir,item);const stat=fs.statSync(fullPath);if(stat.isDirectory()){files=files.concat(findJavaFiles(fullPath));}else if(item.endsWith('.java')){files.push(fullPath);}}}catch(e){}return files;}const javaFiles=findJavaFiles('src/main/java');fs.writeFileSync('sources.txt',javaFiles.join('\\n'));\" && mkdir -p target/classes && javac -d target/classes @sources.txt",
+    "package": "mkdir -p target/bank-management && cp -r src/main/webapp/* target/bank-management/ && mkdir -p target/bank-management/WEB-INF/classes && cp -r target/classes/* target/bank-management/WEB-INF/classes/ && cd target && jar -cvf bank-management.war -C bank-management .",
+    "build": "npm run compile && npm run package",
+    "clean": "rm -rf target sources.txt"
+  },
+  "devDependencies": {}
+}
